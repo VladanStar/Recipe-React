@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import Form from "./components/Form/Form";
+import Recipes from "./components/Recipes";
 
 const API_KEY = "Your-api-key";
 
@@ -38,6 +39,7 @@ class App extends Component {
           <h1 className="title text-light ">Recipe search</h1>
         </header>
         <Form getRecipe={this.getRecipe} />
+        <Recipes recipes={this.state.recipes} />
       </div>
     );
   }
