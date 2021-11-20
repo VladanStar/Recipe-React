@@ -1,8 +1,8 @@
 import React from "react";
 
-const Form = () => {
+const Form = (props) => {
     return (
-    <form>
+        <form onSubmit={ props.getRecipe}>
         <input  type="text"/>
         <button>Search</button>
     </form>
